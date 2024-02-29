@@ -16,7 +16,7 @@ interface LibraryProps {
 export default function Library({ songs }: LibraryProps) {
   const AuthModal = useAuthModal();
   const UploadModal = useUploadModal();
-  const { user, subscription } = useUser();
+  const { user } = useUser();
 
   const onPlay = useOnPlay(songs);
 
